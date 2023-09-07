@@ -49,9 +49,47 @@ button {
     margin-left: 50px;
     margin-bottom: 50px;
     padding: 20px;
+    background-color: cadetblue;
 }
 
 table, th, td {
     border:1px solid black;
+    background: aliceblue;
+    padding: 5px;
 
   }
+
+table {
+    margin-left: 100px;
+    background: blue;
+}
+
+.footer-global ul{
+        display: flex;
+        background-color: #092327;
+        list-style: none;
+        display: flex;
+}
+
+.footer-global li a{
+    text-decoration: none;
+    background-color: #092327;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.footer-global li{
+    display: flex;
+    text-align: center;
+}
+
+.footer-global li a:hover{
+    background-color: #ef8354;
+}
+
+.footer-global{
+    margin-bottom: -80px;
+    margin-top: auto;
+    padding: 20px;
+}
