@@ -9,14 +9,13 @@ const funcion_comics = () => {
         .then(response => response.json())
         .then(data => {
             data.data.results.forEach(element => {
-                divisor_comic = document.createElement("div")
-                comic = document.createElement("a")
-                autor = document.createElement("p")
+                divisor_comic = document.createElement("tr")
+                comic = document.createElement("td")
+                autor = document.createElement("td")
                 autor.textContent = "No Author"
                 if (parseInt(element.creators.available) >0)
                     autor.textContent = element.creators.items[0].name
                 comic.textContent = element.title
-                comic.href = element.urls[0].url
                 contenedor_series.appendChild(divisor_comic)
                 divisor_comic.appendChild(comic)
                 divisor_comic.appendChild(autor)
@@ -39,14 +38,13 @@ const funcion_comics_stories = () => {
         .then(response => response.json())
         .then(data => {
             data.data.results.forEach(element => {
-                divisor_comic = document.createElement("div")
-                comic = document.createElement("a")
-                storie = document.createElement("p")
-                storie.textContent = "No Author"
+                divisor_comic = document.createElement("tr")
+                comic = document.createElement("td")
+                storie = document.createElement("td")
+                storie.textContent = "No Story"
                 if (parseInt(element.stories.available) >0)
                     storie.textContent = element.stories.items[0].name
                 comic.textContent = element.title
-                comic.href = element.urls[0].url
                 contenedor_series.appendChild(divisor_comic)
                 divisor_comic.appendChild(comic)
                 divisor_comic.appendChild(storie)

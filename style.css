@@ -1,19 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e8e8e8;
 }
-.navbar-global {
+.navbar-global ul{
+    display: flex;
+    background-color: #092327;
     list-style: none;
     display: flex;
-    padding: 0;
-    background: #092327;
-    width: 90%;
-    max-width: 100px;
-    margin: auto;
 }
-
 .navbar-global li a{
     text-decoration: none;
+    background-color: #092327;
     color: white;
     padding: 20px;
     display: flex;
@@ -26,11 +22,36 @@ body {
 
 .navbar-global li a:hover{
     background-color: #ef8354;
-}*{
+}
+
+
+div {
     margin: 10px;
     padding: 10px;
 }
 
+.navbar-global{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
 .header {
     display: flex;
 }
+
+button {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+table, th, td {
+    border:1px solid black;
+
+  }

@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API1</title>
     <script src="./functions.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header">
-        <a href="seriesStories">Stories</a>
-        <a href="./seriesAutores.html">Authors</a>
+    <div class="navbar-global">
+        <ul>
+            <li><a href="./seriesStories.html">Api1</a></li>
+            <li><a href="./seriesAutores.html">Api2</a></li>
+        </ul>
+        
     </div>
 
     <button onclick="funcion_comics()">Show Comics</button>
-    <div id="comics"></div>
+    <table style="width:70%" id="comics">
+        <tr>
+          <th>Comic</th>
+          <th>Author</th>
+        </tr>
+      </table>
+    </div>
     
 </body>
 </html>
